@@ -1,5 +1,10 @@
 import React from 'react'
 
+const chainAsChildren = (
+  children: React.ReactNode,
+  component: React.ReactElement
+) => React.cloneElement(component, {}, children)
+
 export type MultiProviderProps = {
   providers: React.ReactElement[]
 }
@@ -10,10 +15,7 @@ const MultiProvider: React.FC<MultiProviderProps> = ({
 }) => {
   return (
     <React.Fragment>
-      {providers.reduceRight(
-        (acc, curr) => React.cloneElement(curr, {}, acc),
-        children
-      )}
+      {providers.reduceRight(chainAsChildren, children)}
     </React.Fragment>
   )
 }
