@@ -3,11 +3,12 @@
   "version": "0.0.1+alpha1",
   "description": "A React Context utilities library",
   "keywords": [
-    "rollup-plugin",
-    "rollup",
-    "es6",
-    "glob",
-    "multi-entry"
+    "react",
+    "context",
+    "library",
+    "easy",
+    "readable",
+    "utility"
   ],
   "repository": {
     "type": "git",
