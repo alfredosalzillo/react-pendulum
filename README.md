@@ -1,18 +1,20 @@
-# pendulum
+# react-pendulum
 
-> A React Context utilities library
+> Use the power of the Pendulum and change the course of the duel!
+>
+> react-pendulum a React Context utility libraries
 
-[![NPM](https://img.shields.io/npm/v/pendulum.svg)](https://www.npmjs.com/package/pendulum) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-pendulum.svg)](https://www.npmjs.com/package/react-pendulum) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 Using npm
 ```bash
-npm install --save pendulum
+npm install --save react-pendulum
 ```
 Using yarn
 ```bash
-yarn add pendulum
+yarn add react-pendulum
 ```
 
 ## Components

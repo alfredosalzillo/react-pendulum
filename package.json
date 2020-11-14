@@ -1,7 +1,7 @@
 {
-  "name": "pendulum",
+  "name": "react-pendulum",
   "version": "0.0.1+alpha1",
-  "description": "A React Context utilities library",
+  "description": "Use the power of the Pendulum and change the course of the duel! react-pendulum a React Context utility libraries",
   "keywords": [
     "react",
     "context",
