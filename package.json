@@ -12,14 +12,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/alfredosalzillo/rollup-plugin-multi-input.git"
+    "url": "https://github.com/alfredosalzillo/react-pendulum.git"
   },
   "author": "alfredo salzillo <alfredo.salzillo@virgilio.it>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alfredosalzillo/rollup-plugin-multi-input/issues"
+    "url": "https://github.com/alfredosalzillo/react-pendulum/issues"
   },
-  "homepage": "https://github.com/alfredosalzillo/rollup-plugin-multi-input#readme",
+  "homepage": "https://github.com/alfredosalzillo/react-pendulum#readme",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
