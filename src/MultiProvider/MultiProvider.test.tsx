@@ -43,4 +43,19 @@ describe('MultiProvider', () => {
     expect(component.toJSON()?.[0].children[0]).toBe('Context1-value')
     expect(component.toJSON()?.[1].children[0]).toBe('Context2-value')
   })
+  it('should set the last provider nearest to the children (reduceRight)', () => {
+    const component = create(
+      <MultiProvider
+        providers={[
+          <Context1.Provider key={1} value='Context1-value1' />,
+          <Context1.Provider key={1} value='Context1-value2' />
+        ]}
+      >
+        <Context1Value />
+        <Context2Value />
+      </MultiProvider>
+    )
+    expect(component.toJSON()).toHaveLength(2)
+    expect(component.toJSON()?.[0].children[0]).toBe('Context1-value2')
+  })
 })
