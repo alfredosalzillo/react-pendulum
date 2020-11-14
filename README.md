@@ -19,7 +19,7 @@ yarn add pendulum
 
 ### MultiProvider
 
-A component to wrap components with multiple providers nicely,
+A component to nicely and readably wrap components with multiple providers
 
 Props
 - `providers` the array of providers instances to wrap to the `children`
