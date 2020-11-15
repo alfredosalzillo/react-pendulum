@@ -32,30 +32,25 @@ Props
 import React, { Component, createContext } from 'react'
 import { MultiProvider } from 'pendulum'
 
-const Context1 = createContext<string>('Context1-defaultValue')
-const Context2 = createContext<string>('Context2-defaultValue')
+const FirstNameContext = createContext<string>('John')
+const LastNameContext = createContext<string>('Doe')
 
-const Context1Value = () => {
-  const value = useContext(Context1)
-  return <div>{value}</div>
+const HelloWorld = () => {
+  const firstName = useContext(FirstNameContext)
+  const lastName = useContext(LastNameContext)
+  return <>{`Hello ${firstName} ${lastName}`}</>
 }
 
-const Context2Value = () => {
-  const value = useContext(Context2)
-  return <div>{value}</div>
-}
-
-class Example extends Component {
+class App extends Component {
   render() {
     return (
       <MultiProvider
         providers={[
-          <Context1.Provider value='Context1-value' />,
-          <Context2.Provider value='Context2-value' />
+          <FirstNameContext.Provider value='Yugi' />,
+          <LastNameContext.Provider value='Muto' />
         ]}
       >
-      <Context1Value />
-      <Context2Value />
+      <HelloWorld />
     </MultiProvider>
     )
   }
@@ -81,7 +76,7 @@ const NameContext = createContext<string>('John Doe')
 
 const withName = withContext(Context1, 'name');
 const HelloWorld = withName(({ name }) => {
-  return `Hello ${name}`
+  return <>{`Hello ${name}`}</>
 })
 ```
 
