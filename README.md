@@ -60,6 +60,27 @@ class Example extends Component {
 }
 ```
 
+## Utilities
+
+### withContext
+A high order function to pass the context value as props to a component.
+
+Args:
+- `Context` the context to assign the value
+- `propsName` the props name to assign the value of `Context`
+
+```tsx
+import React, { Component, createContext } from 'react'
+import { withContext } from 'pendulum'
+
+const NameContext = createContext<string>('John Doe')
+
+const withName = withContext(Context1, 'name');
+const HelloWorld = withName(({ name }) => {
+  return `Hello ${name}`
+})
+```
+
 ## License
 
 MIT © [](https://github.com/)
