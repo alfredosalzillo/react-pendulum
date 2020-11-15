@@ -19,6 +19,8 @@ yarn add react-pendulum
 
 ## Components
 
+- [MultiProvider](#multiprovider)
+
 ### MultiProvider
 
 A component to nicely and readably wrap components with multiple providers
@@ -61,6 +63,8 @@ class Example extends Component {
 ```
 
 ## Utilities
+
+- [withContext](#withcontext)
 
 ### withContext
 A high order function to pass the context value as props to a component.
