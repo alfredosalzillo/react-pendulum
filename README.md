@@ -72,7 +72,7 @@ import { withContext } from 'pendulum'
 
 const NameContext = createContext<string>('John Doe')
 
-const withName = withContext(Context1, 'name');
+const withName = withContext(NameContext, 'name');
 const HelloWorld = withName(({ name }) => {
   return <>{`Hello ${name}`}</>
 })
