@@ -5,19 +5,17 @@ const chainAsChildren = (
   component: React.ReactElement
 ) => React.cloneElement(component, {}, children)
 
-export type MultiProviderProps = {
+export type MultiProviderProps = React.PropsWithChildren<{
   providers: React.ReactElement[]
-}
+}>
 
 const MultiProvider: React.FC<MultiProviderProps> = ({
   children,
   providers
-}) => {
-  return (
-    <React.Fragment>
-      {providers.reduceRight(chainAsChildren, children)}
-    </React.Fragment>
-  )
-}
+}) => (
+  <React.Fragment>
+    {providers.reduceRight(chainAsChildren, children)}
+  </React.Fragment>
+)
 
 export default MultiProvider
