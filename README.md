@@ -1,6 +1,6 @@
 # react-pendulum
 
-react-pendulum a [React Context](https://it.reactjs.org/docs/context.html) utility library.
+A [React Context](https://it.reactjs.org/docs/context.html) utility library.
 
 [![NPM](https://img.shields.io/npm/v/react-pendulum.svg)](https://www.npmjs.com/package/react-pendulum) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![codecov](https://codecov.io/gh/alfredosalzillo/pendulum/branch/main/graph/badge.svg)](https://codecov.io/gh/alfredosalzillo/pendulum)
 
