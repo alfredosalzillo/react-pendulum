@@ -1,8 +1,6 @@
 # react-pendulum
 
-> Use the power of the Pendulum and change the course of the duel!
->
-> react-pendulum a React Context utility libraries
+react-pendulum a [React Context](https://it.reactjs.org/docs/context.html) utility library.
 
 [![NPM](https://img.shields.io/npm/v/react-pendulum.svg)](https://www.npmjs.com/package/react-pendulum) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![codecov](https://codecov.io/gh/alfredosalzillo/pendulum/branch/main/graph/badge.svg)](https://codecov.io/gh/alfredosalzillo/pendulum)
 
@@ -23,7 +21,7 @@ yarn add react-pendulum
 
 ### MultiProvider
 
-A component to nicely and readably wrap components with multiple providers
+A component to clean up the nasty code you get from taking advantage of [React Context](https://it.reactjs.org/docs/context.html) API.
 
 Props
 - `providers` the array of providers instances to wrap to the `children`
@@ -62,7 +60,7 @@ class App extends Component {
 - [withContext](#withcontext)
 
 ### withContext
-A high order function to pass the context value as props to a component.
+A high order function to create the `withContext` HOC for any `Context`.
 
 Args:
 - `Context` the context to assign the value
