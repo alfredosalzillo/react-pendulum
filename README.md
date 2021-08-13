@@ -28,7 +28,7 @@ Props
 
 ```tsx
 import React, { Component, createContext } from 'react'
-import { MultiProvider } from 'pendulum'
+import { MultiProvider } from 'react-pendulum'
 
 const FirstNameContext = createContext<string>('John')
 const LastNameContext = createContext<string>('Doe')
@@ -68,7 +68,7 @@ Args:
 
 ```tsx
 import React, { Component, createContext } from 'react'
-import { withContext } from 'pendulum'
+import { withContext } from 'react-pendulum'
 
 const NameContext = createContext<string>('John Doe')
 
